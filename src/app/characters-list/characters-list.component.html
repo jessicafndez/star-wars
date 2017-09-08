@@ -1,0 +1,20 @@
+<label>This is an example og angular App with Star Wars Api</label>
+
+<div class="">
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Height</th>
+            <th>Weight</th>
+        </tr>
+        <tr *ngFor="let c  of characters">
+            <td>
+                <a [routerLink]="['/persons', c.url]">
+                    {{c.name}} 
+                </a>
+            </td>
+            <td>{{c.height}}</td>
+            <td>{{c.mass}}</td>
+        </tr>
+      </table>
+</div>
