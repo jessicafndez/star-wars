@@ -1,20 +1,21 @@
-<label>This is an example og angular App with Star Wars Api</label>
+<label>This is an example on angular App with Star Wars Api </label><br/>
+<a href="http://swapi.co/api/" target="_blank">Star Wars API</a>
 
 <div class="">
     <table>
         <tr>
-            <th>Name</th>
-            <th>Height</th>
-            <th>Weight</th>
+            <th>Character</th>
+            <th>Gender</th>
+            <th>Birth Year</th>
         </tr>
         <tr *ngFor="let c  of characters">
             <td>
-                <a [routerLink]="['/persons', c.url]">
+                <a [routerLink]="['/character', c.id]">
                     {{c.name}} 
                 </a>
             </td>
-            <td>{{c.height}}</td>
-            <td>{{c.mass}}</td>
+            <td>{{c.gender}}</td>
+            <td>{{c.birth_year}}</td>
         </tr>
       </table>
 </div>

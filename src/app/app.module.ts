@@ -6,26 +6,29 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { CharactersListComponent } from './characters-list/characters-list.component';
 import { CharacterComponent } from './character/character.component';
+import { StarshipsComponent } from './starships/starships.component';
 
 /*Services*/
 import { CharacterService } from './services/character.service';
+import { SpaceshipsService } from './services/spaceships.service';
 
 /*Routes*/
 import { routing } from './app.routes';
-
 
 @NgModule({
   declarations: [
     AppComponent,
     CharactersListComponent,
     CharacterComponent,
+    StarshipsComponent,
   ],
   imports: [
     BrowserModule,
     HttpModule,
     routing
   ],
-  providers: [CharacterService],
+  providers: [CharacterService, SpaceshipsService],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }

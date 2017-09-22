@@ -1,1 +1,43 @@
-<app-characters-list></app-characters-list>
+<div class="w-100 headerNav z-depth-3">
+    <div class="webMaxWidth ">
+      <nav class="grey_navbar z-depth-0">
+        <div class="nav-wrapper ">
+            <a href="/" class="brand-logo">
+                SW API
+            </a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse">
+                <i class="material-icons">menu</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+                <li><a class="mdl-navigation__link" [routerLink]="['/projects']">Characters</a></li>
+                <li><a href="#!">Starships</a></li>
+                <li><div class="divider"></div></li>
+                <li><a href="#!">Species</a></li>
+            </ul>
+            <ul id="mobile-demo" class="side-nav z-depth-4">
+                <li>
+                    <div class="user-view">
+                        <div class="background">
+                            <img src="/assets/images/default.jpg">
+                        </div>
+                        <div class="right-align">
+                            <a class="waves-effect waves-light buttonWebCustom btn">Close</a>
+                        </div>
+                        <div class="side-nav-user">
+                            User Name
+                        </div>
+                    </div>
+                </li>
+                <li><a class="mdl-navigation__link" [routerLink]="['/projects']">Link 1</a></li>
+                <li><a href="#!">Link 2</a></li>
+                <li><div class="divider"></div></li>
+                <li><a href="#!">Media</a></li>
+                <li><a class="waves-effect" href="#!">Close Session</a></li>
+            </ul>
+        </div>
+    </nav>
+  </div>
+</div>
+
+
+<router-outlet></router-outlet>
