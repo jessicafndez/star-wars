@@ -10,7 +10,7 @@ import { StarshipsComponent } from './starships/starships.component';
 
 /*Services*/
 import { CharacterService } from './services/character.service';
-import { SpaceshipsService } from './services/spaceships.service';
+import { StarshipService } from './services/starships.service';
 
 /*Routes*/
 import { routing } from './app.routes';
@@ -27,7 +27,7 @@ import { routing } from './app.routes';
     HttpModule,
     routing
   ],
-  providers: [CharacterService, SpaceshipsService],
+  providers: [CharacterService, StarshipService],
   bootstrap: [AppComponent]
 })
 
